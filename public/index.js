@@ -2,6 +2,7 @@ const input = document.querySelector(".input");
 const outputForm = document.querySelector(".output-form");
 const output = document.querySelector(".output");
 const shortenButton = document.querySelector(".btn");
+const tableContent = document.querySelector('.table-content');
 
 //copying feature
 function Copy() {
@@ -58,7 +59,25 @@ shortenButton.addEventListener("click", () => {
       .then((json) => {
         const short_url = `${document.location.origin}/${json.id}`;
         output.value = short_url;
-        //displayUrl(url, short_url);
+        table(url, short_url);
       });
   }
 });
+
+//table of shortened urls
+
+let count = 1;
+const table = (url, short_url) => {
+  count += 1;
+  const row = document.createElement('tr');
+  const id = document.createElement('td');
+  const longUrls = document.createElement('td');
+  const shortUrls = document.createElement('td');
+  longUrls.innerHTML = url;
+  shortUrls.innerHTML = short_url;
+  id.innerHTML = count;
+  row.appendChild(id);
+  row.appendChild(longUrls);
+  row.appendChild(shortUrls);
+  tableContent.appendChild(row);
+};
