@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind Venugopal</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/glypho-generic-icons/64/link-chain-512.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <header class="header">
+        <div class="section">
+            <div class="hero-text">
+                <h1 class="hero-main">Blupe URL Shortner</h1>
+                <h4 class="hero-sub">shortern as many as you want!</h4>
+            </div>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="main-content">
+            <section class="input-output">
+
+                <div class="input-form">
+                    <input type="text" class="input" placeholder="Enter the url to shorten">
+                    <button class="btn">Shorten</button>
+                </div>
+
+                <div class="output-form">
+                    <input type="text" class="output" spellcheck="false" readonly id="outputUrl">
+                    <button class="copyBtn" id="copyButton" data-clipboard-target=".output"
+                        onclick="Copy()">Copy</button>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <br>
+    <footer class="footer">
+        <div class="footer-text">
+            <span>Developed with ❤️</span>
+            <br>
+            <span>No © issues! Feel free to copy 🙂</span>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="/index.js"></script>
+
+
+
+</body>
+
+</html>
