@@ -1,1 +1,4 @@
 /node_modules
+/certs
+/.well-known
+/blupe.co-ssl-bundle
