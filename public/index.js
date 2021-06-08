@@ -66,7 +66,7 @@ shortenButton.addEventListener("click", () => {
 
 //table of shortened urls
 
-let count = 1;
+let count = 0;
 const table = (url, short_url) => {
   count += 1;
   const row = document.createElement('tr');
